@@ -6,7 +6,7 @@ import { Heading } from './components/Heading';
 function App() {
   return (
     <>
-    <Heading />
+    <Heading>Olá mundo!</Heading>
 
       <h1>Hello, World!</h1>
       <p>Bem-vindo ao React</p>
