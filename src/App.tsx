@@ -1,10 +1,10 @@
 import './styles/theme.css';
 import './styles/global.css';
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Countdown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
 
 function App() {
@@ -25,8 +25,7 @@ function App() {
       <Container>
         <form className="form" action="">
           <div className='formRow'>
-            <label htmlFor="meuInput">task</label>
-            <input id= 'meuInput' type="text" />
+            <DefaultInput id='meuInput' type='text'/>
           </div>
 
           <div className='formRow'>
