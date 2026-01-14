@@ -28,6 +28,9 @@ function App() {
             <DefaultInput 
               id='meuInput' 
               type='text'
+              placeholder='Digite algo'
+              disabled
+              defaultValue='Valor preenchido'
             />
           </div>
 
