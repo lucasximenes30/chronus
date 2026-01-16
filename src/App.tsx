@@ -9,11 +9,20 @@ import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
 import { Footer } from './components/Footer';
+import { Heading } from './components/Heading';
+import { useState } from 'react';
 
 
 function App() {
+  const [numero,setNumero] = useState(0);
+
+  function handleCLick() {
+    setNumero(prevState => prevState + 1);
+  }
   return (
     <>
+      <Heading>Número: {numero}</Heading>
+      <button onClick={handleCLick}>Clique aqui</button>
        <Container>
         <Logo />
       </Container>
@@ -30,11 +39,10 @@ function App() {
         <form className="form" action="">
           <div className='formRow'>
             <DefaultInput 
+              labelText={numero.toString()}
               id='meuInput' 
               type='text'
               placeholder='Digite algo'
-              disabled
-              defaultValue='Valor preenchido'
             />
           </div>
 
